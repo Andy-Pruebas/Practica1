@@ -43,7 +43,6 @@
             android:padding="5dp"
             android:text="@string/practicat1"
             app:layout_constraintTop_toBottomOf="@+id/Practicat" />
-
         <TextView
             android:id="@+id/practicat2"
             android:layout_width="match_parent"
@@ -60,6 +59,20 @@
             android:text="Prom"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/Practicat" />
+
+        <EditText
+            android:id="@+id/nota1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/practicat1"
+            app:layout_constraintTop_toBottomOf="@+id/Promediot" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="@+id/practicat2"
+            app:layout_constraintTop_toBottomOf="@+id/nota1" />
     </android.support.constraint.ConstraintLayout>
 
     <TextView
