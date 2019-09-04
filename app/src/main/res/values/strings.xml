@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string-array name="metodo_calificar">
+        <item>A: 30%T + 70%L</item>
+        <item>B: 40%T + 60%L</item>
+        <item>C: 20%T + 80%L</item>
+    </string-array>
+    <string name="sistema">Sistema de evaluacion</string>
+    <string name="separador">------------------------------------------------------------------------------------</string>
+    <string name="practicat">Practicas Teoria</string>
+    <string name="practicat1">Practica 1</string>
+    <string name="practicat2">Practica 2</string>
+    <string name="practical">Practicas Laboratorio</string>
+    <string name="practical1">Practica 1</string>
+    <string name="practical2">Practica 2</string>
+    <string name="practicatl3">Practica 3</string>
+    <string name="practical4">Practica 4</string>
+</resources>

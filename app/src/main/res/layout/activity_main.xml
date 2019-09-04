@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sistema"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/metodo_calificar"></Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separador" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Practicat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/practicat"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/practicat1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practicat1"
+            app:layout_constraintTop_toBottomOf="@+id/Practicat" />
+
+        <TextView
+            android:id="@+id/practicat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practicat2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/practicat1" />
+
+        <TextView
+            android:id="@+id/Promediot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prom"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/Practicat" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/separador" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Practical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/practical"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/practical1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practical1"
+            app:layout_constraintTop_toBottomOf="@+id/Practical" />
+
+        <TextView
+            android:id="@+id/practical2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practical2"
+            app:layout_constraintTop_toBottomOf="@+id/practical1" />
+
+        <TextView
+            android:id="@+id/practical3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practicatl3"
+            app:layout_constraintTop_toBottomOf="@+id/practical2" />
+
+        <TextView
+            android:id="@+id/practical4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/practical4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/practical3" />
+
+        <TextView
+            android:id="@+id/Promediot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prom"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/Practical" />
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Promedio:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            />
+
+        <Button
+            android:id="@+id/Calcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textSize="20sp"
+            android:text="Calcular"
+            />
+    </LinearLayout>
+</LinearLayout>
