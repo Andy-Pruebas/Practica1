@@ -15,6 +15,7 @@
         android:textSize="20sp" />
 
     <Spinner
+        android:id="@+id/seleccionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/metodo_calificar"></Spinner>
@@ -22,7 +23,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/separador" />
+        android:text="@string/separador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
@@ -42,6 +45,7 @@
             android:layout_height="wrap_content"
             android:padding="5dp"
             android:text="@string/practicat1"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Practicat" />
         <TextView
             android:id="@+id/practicat2"
@@ -52,27 +56,31 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/practicat1" />
 
-        <TextView
-            android:id="@+id/Promediot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Prom"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/Practicat" />
-
         <EditText
             android:id="@+id/nota1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practicat1"
-            app:layout_constraintTop_toBottomOf="@+id/Promediot" />
+            app:layout_constraintTop_toBottomOf="@+id/Promediot"
+            />
         <EditText
+            android:id="@+id/nota2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practicat2"
             app:layout_constraintTop_toBottomOf="@+id/nota1" />
+        <TextView
+            android:id="@+id/Promediot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prom 0.0"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/Practicat" />
+
     </android.support.constraint.ConstraintLayout>
 
     <TextView
@@ -126,10 +134,10 @@
             app:layout_constraintTop_toBottomOf="@+id/practical3" />
 
         <TextView
-            android:id="@+id/Promediot1"
+            android:id="@+id/Promedio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prom"
+            android:text="Prom 0.0"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/Practical" />
         <EditText
@@ -137,14 +145,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practical1"
-            app:layout_constraintTop_toBottomOf="@+id/Promediot1" />
+            app:layout_constraintTop_toBottomOf="@+id/Promedio1" />
 
         <EditText
             android:id="@+id/notal2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practical2"
             app:layout_constraintTop_toBottomOf="@+id/notal1" />
         <EditText
@@ -152,6 +162,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practical3"
             app:layout_constraintTop_toBottomOf="@+id/notal2" />
 
@@ -160,6 +171,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="@+id/practical4"
             app:layout_constraintTop_toBottomOf="@+id/notal3" />
 
@@ -173,22 +185,26 @@
         >
 
         <TextView
+            android:id="@+id/PromedioM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Promedio:"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="20dp" />
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Promedio 0.0"
+            android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/mesanje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:text=" "
             android:textSize="30dp"
             />
 
         <Button
-            android:id="@+id/Calcular"
+            android:id="@+id/calcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/Widget.AppCompat.Button.Colored"

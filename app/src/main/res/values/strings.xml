@@ -6,7 +6,7 @@
         <item>C: 20%T + 80%L</item>
     </string-array>
     <string name="sistema">Sistema de evaluacion</string>
-    <string name="separador">------------------------------------------------------------------------------------</string>
+    <string name="separador">________________________________________________</string>
     <string name="practicat">Practicas Teoria</string>
     <string name="practicat1">Practica 1</string>
     <string name="practicat2">Practica 2</string>
